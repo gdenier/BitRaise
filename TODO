@@ -1,0 +1,8 @@
+
+Todo:
+  ☐ add Authentification
+  ☐ add RBAuth
+  ☐ add Transaction model
+  ☐ add Transaction list
+  ☐ add homepage for not authenticated
+  ☐ add dashboard for authenticated
