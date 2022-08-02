@@ -6,6 +6,14 @@ import { useAuth } from '@redwoodjs/auth'
 import { Form, TextField, PasswordField, Submit } from '@redwoodjs/forms'
 import { navigate, routes } from '@redwoodjs/router'
 
+// const CREATE_PROFILE = gql`
+//   mutation CreateUserProfile($input:  !) {
+//     createUserProfile(input: $input) {
+//       id
+//     }
+//   }
+// `
+
 const SignupPage = () => {
   const { client } = useAuth() as { client: SupabaseClient }
   const [error, setError] = useState(null)
@@ -15,10 +23,9 @@ const SignupPage = () => {
 
     try {
       const response = await client.auth.signUp(data)
-      console.log('response: ', response)
 
       if (!response?.error?.message) {
-        navigate(routes.home())
+        window.location.href = routes.createProfile()
         return
       }
       setError(response.error.message)

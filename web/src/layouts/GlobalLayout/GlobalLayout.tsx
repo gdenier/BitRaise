@@ -1,3 +1,5 @@
+import { Toaster } from '@redwoodjs/web/toast'
+
 import AuthNavigation from 'src/components/auth/AuthNavigation/AuthNavigation'
 
 type GlobalLayoutProps = {
@@ -7,6 +9,7 @@ type GlobalLayoutProps = {
 const GlobalLayout = ({ children }: GlobalLayoutProps) => {
   return (
     <>
+      <Toaster />
       <header>
         <AuthNavigation />
       </header>
