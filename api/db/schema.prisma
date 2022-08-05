@@ -16,6 +16,8 @@ model UserProfile {
   lastName  String?
   nickName  String?
 
+  isEarly Boolean @default(false)
+
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 

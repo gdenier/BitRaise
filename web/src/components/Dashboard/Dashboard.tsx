@@ -1,13 +1,14 @@
-import AuthenticatedLayout from 'src/layouts/AuthenticatedLayout/AuthenticatedLayout'
+import { MetaTags } from '@redwoodjs/web'
 
 const Dashboard = () => {
   return (
-    <AuthenticatedLayout>
+    <>
+      <MetaTags title="Dashboard" />
       <div>
         <h2>{'Dashboard'}</h2>
         <p>{'Find me in ./web/src/components/Dashboard/Dashboard.tsx'}</p>
       </div>
-    </AuthenticatedLayout>
+    </>
   )
 }
 

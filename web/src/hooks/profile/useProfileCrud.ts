@@ -53,7 +53,11 @@ export const useProfileCrud = (): useProfileCrudReturnValue => {
           return (
             await createProfile({
               variables: {
-                input: { ...input, supabaseUid: currentUser?.sub },
+                input: {
+                  ...input,
+                  supabaseUid: currentUser?.sub,
+                  isEarly: true,
+                },
               },
             })
           ).data

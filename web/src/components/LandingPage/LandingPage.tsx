@@ -20,7 +20,7 @@ const LandingPage = () => {
                 new
               </span>
             </span>
-            <span className="text-6xl md:text-7xl col-span-2 text-right">
+            <span className="text-6xl md:text-7xl col-span-2 md:text-right">
               budget approche
             </span>
           </h2>

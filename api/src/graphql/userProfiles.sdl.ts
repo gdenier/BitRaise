@@ -5,6 +5,7 @@ export const schema = gql`
     firstName: String
     lastName: String
     nickName: String
+    isEarly: Boolean!
     createdAt: DateTime!
     updatedAt: DateTime!
   }
@@ -18,6 +19,7 @@ export const schema = gql`
     firstName: String
     lastName: String
     nickName: String
+    isEarly: Boolean
   }
 
   input UpdateUserProfileInput {
