@@ -56,7 +56,6 @@ export const useProfileCrud = (): useProfileCrudReturnValue => {
                 input: {
                   ...input,
                   supabaseUid: currentUser?.sub,
-                  isEarly: true,
                 },
               },
             })

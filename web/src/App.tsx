@@ -9,6 +9,8 @@ import Routes from 'src/Routes'
 
 import './index.css'
 
+console.log(process.env)
+
 const supabaseClient = createClient(
   process.env.SUPABASE_URL,
   process.env.SUPABASE_KEY
