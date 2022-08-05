@@ -1,8 +1,8 @@
 
 Todo:
   ✔ add Authentification @started(22-08-02 19:03) @done(22-08-02 19:56) @lasted(53m30s)
-  ☐ add RBAuth
-  ☐ add Transaction model @started(22-08-02 22:28)
+  ✔ add RBAuth @done(22-08-05 17:41)
+  ✔ add Transaction model @started(22-08-02 22:28) @done(22-08-05 17:41) @lasted(2d19h13m39s)
   ☐ add Transaction list
-  ☐ add homepage for not authenticated
-  ☐ add dashboard for authenticated
+  ✔ add homepage for not authenticated @done(22-08-05 17:41)
+  ✔ add dashboard for authenticated @done(22-08-05 17:41)
