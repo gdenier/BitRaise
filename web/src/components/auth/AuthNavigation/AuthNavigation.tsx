@@ -11,10 +11,14 @@ const AuthNavigation = () => {
       {isAuthenticated ? (
         <SignoutButton />
       ) : (
-        <>
-          <Link to={routes.signup()}>Sign Up</Link>
-          <Link to={routes.signin()}>Sign In</Link>
-        </>
+        <ul>
+          <li>
+            <Link to={routes.signup()}>Sign Up</Link>
+          </li>
+          <li>
+            <Link to={routes.signin()}>Sign In</Link>
+          </li>
+        </ul>
       )}
     </nav>
   )
