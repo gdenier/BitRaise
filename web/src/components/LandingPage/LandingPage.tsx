@@ -12,13 +12,10 @@ const LandingPage = () => {
       />
       <LandingNav />
       <div className="flex items-center h-screen w-full gap-8">
-        <div className="flex flex-col gap-8 justify-center items-start pl-6 md:pl-0 md:items-end w-full">
+        <div className="flex flex-col gap-8 justify-center items-start px-6 md:px-0 md:items-end w-full">
           <h2 className="flex flex-col md:items-end">
-            <span className="flex md:flex-col lg:flex-row gap-3">
-              <span className="text-6xl md:text-7xl">Join the</span>
-              <span className="text-6xl md:text-7xl font-bold text-right">
-                new
-              </span>
+            <span className="text-6xl md:text-7xl md:text-right">
+              Join the <b>new</b>
             </span>
             <span className="text-6xl md:text-7xl col-span-2 md:text-right">
               budget approche
