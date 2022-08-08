@@ -6,12 +6,18 @@ export const schema = gql`
     income: Boolean!
     createdAt: DateTime!
     updatedAt: DateTime!
-    UserProfile: UserProfile!
-    userProfileId: String!
+  }
+
+  type TransactionSummary {
+    id: String!
+    title: String!
+    value: Float!
+    income: Boolean!
   }
 
   type Query {
     transactions: [Transaction!]! @requireAuth
+    transactionsSummary: [TransactionSummary!]! @requireAuth
     transaction(id: String!): Transaction @requireAuth
   }
 
@@ -19,14 +25,12 @@ export const schema = gql`
     title: String!
     value: Float!
     income: Boolean!
-    userProfileId: String!
   }
 
   input UpdateTransactionInput {
     title: String
     value: Float
     income: Boolean
-    userProfileId: String
   }
 
   type Mutation {

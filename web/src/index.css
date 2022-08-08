@@ -11,3 +11,10 @@
 /**
  * END --- SETUP TAILWINDCSS EDIT
  */
+
+ .list-row:nth-of-type(odd){
+  @apply bg-gray-200
+ }
+ .list-row:nth-of-type(even){
+  @apply bg-gray-100
+ }

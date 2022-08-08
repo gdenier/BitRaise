@@ -1,13 +1,9 @@
-import { MetaTags } from '@redwoodjs/web'
+import TransactionsSummaryCell from 'src/components/Dashboard/TransactionsSummaryCell'
 
 const Dashboard = () => {
   return (
     <>
-      <MetaTags title="Dashboard" />
-      <div>
-        <h2>{'Dashboard'}</h2>
-        <p>{'Find me in ./web/src/components/Dashboard/Dashboard.tsx'}</p>
-      </div>
+      <TransactionsSummaryCell />
     </>
   )
 }
