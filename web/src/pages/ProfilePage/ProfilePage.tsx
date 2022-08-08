@@ -1,6 +1,6 @@
 import { MetaTags } from '@redwoodjs/web'
 
-import SignoutButton from 'src/components/auth/SignoutButton/SignoutButton'
+import { SignoutButton } from 'src/components/auth/SignoutButton'
 
 const ProfilePage = () => {
   return (

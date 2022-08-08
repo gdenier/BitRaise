@@ -1,15 +1,15 @@
 import { MetaTags } from '@redwoodjs/web'
 
-import SignoutButton from 'src/components/auth/SignoutButton/SignoutButton'
+import { SignoutButton } from 'src/components/auth/SignoutButton'
 
 const EarlyPage = () => {
   return (
     <>
       <MetaTags title="Early" description="Early page" />
 
-      <div className="flex flex-col gap-8 px-2 justify-center items-center h-screen">
-        <i className="emoji-clock w-24 h-24" />
-        <h1 className="font-medium text-2xl">A little more time</h1>
+      <div className="flex h-screen flex-col items-center justify-center gap-8 px-2">
+        <i className="emoji-clock h-24 w-24" />
+        <h1 className="text-2xl font-medium">A little more time</h1>
         <p>
           BitRaise is not yet available, we will inform you when the application
           becomes available for you.

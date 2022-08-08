@@ -9,14 +9,14 @@ const AuthentificationLayout = ({ children }: AuthentificationLayoutProps) => {
   const { isAuthenticated } = useAuth()
 
   if (isAuthenticated) {
-    navigate(routes.home())
+    navigate(routes.dashboard())
   }
 
   return (
     <>
       <Link
-        to={routes.home()}
-        className="btn btn-ghost gap-2 absolute left-6 top-6"
+        to={routes.landing()}
+        className="btn btn-ghost absolute left-6 top-6 gap-2"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

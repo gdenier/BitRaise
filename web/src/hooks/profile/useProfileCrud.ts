@@ -38,7 +38,7 @@ export const useProfileCrud = (): useProfileCrudReturnValue => {
   >(CREATE_PROFILE, {
     onCompleted: () => {
       toast.success('Votre compte est pret')
-      navigate(routes.home())
+      navigate(routes.dashboard())
     },
     onError: (error) => {
       toast.error(error.message)

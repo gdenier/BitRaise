@@ -3,7 +3,7 @@ import { MetaTags } from '@redwoodjs/web'
 
 import LandingNav from './LandingNav'
 
-const LandingPage = () => {
+const LandingContent = () => {
   return (
     <>
       <MetaTags
@@ -11,13 +11,13 @@ const LandingPage = () => {
         description="Introduction to BitRaise the budget app"
       />
       <LandingNav />
-      <div className="flex items-center h-screen w-full gap-8">
-        <div className="flex flex-col gap-8 justify-center items-start px-6 md:px-0 md:items-end w-full">
+      <div className="flex h-screen w-full items-center gap-8">
+        <div className="flex w-full flex-col items-start justify-center gap-8 px-6 md:items-end md:px-0">
           <h2 className="flex flex-col md:items-end">
-            <span className="text-6xl md:text-7xl md:text-right">
+            <span className="text-6xl md:text-right md:text-7xl">
               Join the <b>new</b>
             </span>
-            <span className="text-6xl md:text-7xl col-span-2 md:text-right">
+            <span className="col-span-2 text-6xl md:text-right md:text-7xl">
               budget approche
             </span>
           </h2>
@@ -25,8 +25,8 @@ const LandingPage = () => {
             Join for free
           </Link>
         </div>
-        <div className="w-full relative hidden md:block">
-          <i className="emoji-rocket block w-4/6 h-4/6 absolute inset-x-32 xl:inset-x-48 -inset-y-4 z-10" />
+        <div className="relative hidden w-full md:block">
+          <i className="emoji-rocket absolute inset-x-32 -inset-y-4 z-10 block h-4/6 w-4/6 xl:inset-x-48" />
           <svg
             id="sw-js-blob-svg"
             viewBox="0 0 100 100"
@@ -62,4 +62,4 @@ const LandingPage = () => {
   )
 }
 
-export default LandingPage
+export default LandingContent

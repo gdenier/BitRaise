@@ -14,19 +14,19 @@ const CreateProfilePage = () => {
 
   const onSubmit = async (input: FormCreateUserProfileInput) => {
     await create(input)
-    navigate(routes.home())
+    navigate(routes.dashboard())
   }
 
   return (
     <>
       <MetaTags title="Create Profile" description="CreateProfile page" />
 
-      <div className="flex justify-center items-center h-screen">
-        <div className="flex flex-col items-center gap-8 w-full max-w-xs">
-          <i className="emoji-hugging-face block w-24 h-24" />
+      <div className="flex h-screen items-center justify-center">
+        <div className="flex w-full max-w-xs flex-col items-center gap-8">
+          <i className="emoji-hugging-face block h-24 w-24" />
           <h1 className="text-4xl font-medium">One more step</h1>
-          <Form onSubmit={onSubmit} className="flex flex-col w-full  gap-4">
-            <div className="flex flex-col w-full">
+          <Form onSubmit={onSubmit} className="flex w-full flex-col  gap-4">
+            <div className="flex w-full flex-col">
               <div className="form-control w-full">
                 <label htmlFor="firstName" className="label">
                   <span className="label-text">Firstname</span>
@@ -63,7 +63,7 @@ const CreateProfilePage = () => {
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="stroke-current flex-shrink-0 h-6 w-6"
+                    className="h-6 w-6 flex-shrink-0 stroke-current"
                     fill="none"
                     viewBox="0 0 24 24"
                   >

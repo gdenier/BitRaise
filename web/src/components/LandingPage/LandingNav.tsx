@@ -7,8 +7,8 @@ const LandingNav = (): ReactElement => {
     <header className="navbar absolute pr-6">
       <div className="flex-1">
         <Link
-          to={routes.home()}
-          className="btn btn-ghost normal-case text-4xl group hover:bg-transparent"
+          to={routes.landing()}
+          className="group btn btn-ghost text-4xl normal-case hover:bg-transparent"
         >
           <span className="group-hover:text-gray-900">Bit</span>
           <span className="text-primary group-hover:text-primary-focus">
@@ -17,7 +17,7 @@ const LandingNav = (): ReactElement => {
         </Link>
       </div>
       <div className="flex-none">
-        <ul className="menu menu-horizontal p-0 gap-2">
+        <ul className="menu menu-horizontal gap-2 p-0">
           <li>
             <Link to={routes.signin()}>SignIn</Link>
           </li>

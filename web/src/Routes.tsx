@@ -19,14 +19,15 @@ const Routes = () => {
     <Router>
       <Route path="/early" page={EarlyPage} name="early" />
       <Set wrap={GlobalLayout}>
+        <Route path="/" page={LandingPage} name="landing" />
         {/* show the dashboard if authenticated */}
-        <Route path="/" page={HomePage} name="home" />
         <Set wrap={AuthentificationLayout}>
           <Route path="/signin" page={SigninPage} name="signin" />
           <Route path="/signup" page={SignupPage} name="signup" />
         </Set>
         <Private unauthenticated="signin">
-          <Set wrap={[PreviewLayout, AuthenticatedLayout]}>
+          <Set wrap={[AuthenticatedLayout, PreviewLayout]}>
+            <Route path="/dashboard" page={DashboardPage} name="dashboard" />
             <Route path="/transactions" page={TransactionsPage} name="transactions" />
             <Route path="/stats" page={StatsPage} name="stats" />
             <Route path="/profile" page={ProfilePage} name="profile" />

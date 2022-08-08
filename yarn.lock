@@ -19627,6 +19627,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"prettier-plugin-organize-imports@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "prettier-plugin-organize-imports@npm:3.0.1"
+  peerDependencies:
+    "@volar/vue-typescript": ">=0.39.0"
+    prettier: ">=2.0"
+    typescript: ">=2.9"
+  peerDependenciesMeta:
+    "@volar/vue-typescript":
+      optional: true
+  checksum: 3baf5844f510131906b8728551ec12adac564376300489ed419793ab2418cf7dd44678ef56fd79f8f1c5731f3ab5b55b0b6cb8fc28110e52369f5c372f76f426
+  languageName: node
+  linkType: hard
+
 "prettier-plugin-tailwindcss@npm:^0.1.13":
   version: 0.1.13
   resolution: "prettier-plugin-tailwindcss@npm:0.1.13"
@@ -21049,6 +21063,7 @@ __metadata:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@redwoodjs/core": 2.2.0
+    prettier-plugin-organize-imports: ^3.0.1
     prettier-plugin-tailwindcss: ^0.1.13
   languageName: unknown
   linkType: soft
