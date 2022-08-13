@@ -16,6 +16,8 @@ model UserProfile {
   lastName  String?
   nickName  String?
 
+  balance Float @default(0)
+
   isEarly Boolean @default(false)
 
   createdAt DateTime @default(now())
@@ -27,9 +29,10 @@ model UserProfile {
 model Transaction {
   id String @id @default(uuid())
 
-  title  String
-  value  Float
-  income Boolean
+  title     String
+  value     Float
+  income    Boolean
+  effective DateTime @default(now())
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt

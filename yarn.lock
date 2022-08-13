@@ -5425,6 +5425,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tanstack/react-table@npm:^8.5.11":
+  version: 8.5.11
+  resolution: "@tanstack/react-table@npm:8.5.11"
+  dependencies:
+    "@tanstack/table-core": 8.5.11
+  peerDependencies:
+    react: ">=16"
+    react-dom: ">=16"
+  checksum: 5db7a1ae48b1dd0a8f987baae90e7c792587884b49066c240806e71ba4500b880c9b25084c9b84aebc544037ba10d501bae26243d43efb56129fd427eaf0fbaa
+  languageName: node
+  linkType: hard
+
+"@tanstack/table-core@npm:8.5.11":
+  version: 8.5.11
+  resolution: "@tanstack/table-core@npm:8.5.11"
+  checksum: db8e1c82e1f890f1b2d2954e369c06dc364cbfb7c6c4afe911bd54bcf6da96c5875df4a06a73739838f5e59a4d66fa65ba1b82b64e42fec789cc008e37fc4139
+  languageName: node
+  linkType: hard
+
 "@testing-library/dom@npm:^8.0.0, @testing-library/dom@npm:^8.11.1":
   version: 8.16.0
   resolution: "@testing-library/dom@npm:8.16.0"
@@ -24134,6 +24153,7 @@ __metadata:
     "@redwoodjs/router": 2.2.0
     "@redwoodjs/web": 2.2.0
     "@supabase/supabase-js": ^1.35.4
+    "@tanstack/react-table": ^8.5.11
     autoprefixer: ^10.4.8
     daisyui: ^2.20.0
     postcss: ^8.4.14

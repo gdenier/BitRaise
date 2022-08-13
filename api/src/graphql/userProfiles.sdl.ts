@@ -6,6 +6,7 @@ export const schema = gql`
     lastName: String
     nickName: String
     isEarly: Boolean!
+    balance: Float!
     createdAt: DateTime!
     updatedAt: DateTime!
   }

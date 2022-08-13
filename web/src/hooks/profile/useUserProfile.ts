@@ -12,12 +12,13 @@ const QUERY_USER_PROFILE = gql`
       nickName
       isEarly
       supabaseUid
+      balance
     }
   }
 `
 
 interface useUserProfileReturnValue {
-  profile: UserProfile
+  profile: UserProfile | undefined
   isLoading: boolean
 }
 
